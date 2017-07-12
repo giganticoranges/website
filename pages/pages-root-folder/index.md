@@ -1,7 +1,8 @@
 ---
 layout: page
-permalink: /index.html
+title:  "Home"
 breadcrumb: true
+permalink: /index.html
 header:
     image: banner.jpg
     background-color:  "#FFFFFF"
