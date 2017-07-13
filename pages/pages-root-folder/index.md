@@ -4,8 +4,10 @@ title:  "Home"
 breadcrumb: true
 permalink: /index.html
 header:
-    image: banner.jpg
+    image: "banner.jpg"
     background-color:  "#FFFFFF"
+image:
+    thumb: "banner.jpg"
 Home: true
 ---
 
