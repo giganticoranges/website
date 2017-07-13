@@ -8,7 +8,6 @@ header:
     background-color:  "#FFFFFF"
 image:
     thumb: "banner.jpg"
-Home: true
 ---
 
 
