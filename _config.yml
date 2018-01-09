@@ -1,38 +1,165 @@
----
+#
+# MarkONE - OnePage Resume
+# Configuratin file
+#
 
-port: 4000
-host: 0.0.0.0
-safe: false
+# Compile exclude
+exclude: ["node_modules", "gulpfile.js", "package.json", "README.md"]
 
+#
+# If your website is placed in a separate folder on your server please modify
+# this with your folder name, by default is empty.
+# Example: MarkONE Demo is hosted on projects.gleesik.ro/mark-one
+# If I compile MarkONE Template and I put in /mark-one without modifing baseurl
+# than scripts can't be loaded corectly.
+# For this example my site url is: projects.gleesik.ro (This can be just www.example.com)
+# My folder for Demo Website is: /mark-one so baseurl: /mark-one
+#
+baseurl:
 
-### site serving configuration ###
-exclude: [CNAME, README.md, .gitignore]
-permalink: /:title ## disables post output
-timezone: null
-lsi: false
-markdown: kramdown
+########################################################
+########################################################
+###############   PROFILE INFORMATIONS   ###############
+########################################################
+########################################################
+name: Trevor
+surname: Smith
+avatar-url: images/me.jpg
+jobs:
+  - job: Engineer
+  - job: Programmer
 
+########################################################
+######################  Header  ########################
+########################################################
+header-image: images/header-bg.jpg
 
-### content configuration ###
-title:       "SinglePaged - Simple Jekyll template"
-keywords:    "SinglePaged, jekyll, template, github, blog, single page"
-description: "A single-page template for Jekyll based blogs (like what you'd use on github pages!)"
-source_link: "https://github.com/t413/SinglePaged"
-favicon:     "img/favicon.ico"
-touch_icon:  "img/apple-touch-icon.png"
-google_analytics_key: UA-49607422-1 ## put YOUR key here to enable tracking! (blank to disable)
+########################################################
+#######################  Quote  ########################
+########################################################
+quote: We can't solve problems with the same thinking we used to create them
 
+########################################################
+###################  Keep in Touch  ####################
+########################################################
+touch-section-title: Contact Me
+contact-info:
+  phone: +1 519 829 5125
+  website: www.hiimtrevor.io
+  email: tsmith37@uoguelph.ca
 
-### template colors, used site-wide via css ###
-colors:
-  black:     '#111111'
-  white:     '#f8f8f8'
-  blue:      '#49a7e9'
-  green:     '#9bcf2f'
-  purple:    '#c869bf'
-  orange:    '#fab125'
-  turquoise: '#0fbfcf'
+########################################################
+#######################  About  ########################
+########################################################
+about-section-title: About Me
+about-section-description: I am a second year student at the University of Guelph working towards a Bachelor of Engineering, majoring in Engineering Systems and Computing. Some of my interests include Robotics Design, Hardware Design, Machine Learning, Blockchain Technologies, and Web Development. I am currently looking for a job for summer 2018, and hope to be able to expand my programming abilities
 
-kramdown:
-  auto_ids:  false
+########################################################
+######################  Services  ######################
+########################################################
+services-section-title: Services
+services-section-description: I am seeking employment in the fields of Web Development, Software Development, and Hardware Design. I have experience developing static websites with HTML and CSS, and have some experience with RESTful APIs. Using Java and C, I have worked on large projects and am experienced in working with several different data structures. I have also worked with VHDL to design and program FPGA boards for simulation.
+services:
+  - title: Web Development
+    short-description: Static Website Development, developed with Jekyll, HTML, CSS and Liquid
+    icon: pe-7s-leaf
+  - title: Software Development
+    short-description: Experience on large projects in Java and C, some experience in Python
+    icon: pe-7s-science
+  - title: Hardware Design
+    short-description: Design and modeling of circuits. Experience using VHDL and FPGAs.
+    icon: pe-7s-scissors
 
+########################################################
+#######################  Skills  #######################
+########################################################
+skills-section-title: Skills
+skills-section-description: I previously volunteered in a research lab where I learned about website development, primarily working with the software Jekyll as well as HTML and CSS. I took the opportunity to also learn about the basics of image recognition using Python and OpenCV. I have experience developing in a variety of programming languages which would be an asset to many teams. In addition to this, I learned the principles of hardware design as well as modeling with VHDL and and FPGA technology.
+apps-skills:
+  - name: Eclipse
+    company: Eclipse Foundation
+    percent: 86
+  - name: Visual Studio
+    company: Microsoft
+    percent: 92
+  - name: Git
+    company: Github
+    percent: 99
+  - name: Jekyll
+    company: 
+    percent: 96
+languages-skills:
+  - name: HTML5
+    percent: 89
+  - name: CSS3
+    percent: 85
+  - name: JavaScript
+    percent: 90
+  - name: Python
+    percent: 92
+  - name: C
+    percent: 98
+  - name: Java
+    percent: 95
+  - name: Sass
+    percent: 82
+  - name: Jekyll
+    percent: 93
+
+########################################################
+#####################  Education  ######################
+########################################################
+education-section-title: Education
+education-section-description: I am a second year student currently studying at the University of Guelph. I aspire to continue my studies into graduate school, where I want to further explore the fields of computer science and engineering.
+tree-edu-timeline:
+  - institution: University of Guelph
+    description: Begin a long journey towards a degree in engineering
+    icon: pe-7s-medal
+    year: 2016
+  - institution: University of Guelph
+    description: Completion of year one
+    icon: pe-7s-medal
+    year: 2017
+  - institution: University of Guelph
+    description: Awarded International Brotherhoood of Electrical Workers Scholarship for top average in my Engineering Systems and Computing class
+    icon: pe-7s-medal
+    year: 2017
+  - institution: University of Guelph
+    description: Currently entering semester four
+    icon: pe-7s-medal
+    year: 2018
+
+########################################################
+#####################  Experience  #####################
+########################################################
+experience-section-title: Experience
+experience-section-description: Being a second year student, I haven't had the opportunity for much work in my field. I am excited to be searching for employment for the summer of 2018, and there will be much more to come!
+tree-work-timeline:
+  - title: Lab Assistant
+    description: Created new laboratory website 
+    period: <small> April </small> 2017 <small>- August</small>
+    icon: pe-7s-star
+
+########################################################
+######################  Projects  ######################
+########################################################
+projects-section-title: Projects
+projects-section-description: More coming to this section soon! For now, feel free to check out the website I developed last summer.
+projects:
+  - title: Robotics Lab Website
+    project-url: robotics.uoguelph.ca
+    image-url: images/projects/img-01.jpg
+
+########################################################
+#######################  Contact  ######################
+########################################################
+contact-section-title: Contact
+contact-section-description: If you've survived this long and would like to contact me, please feel free. All questions are more than welcome!
+
+########################################################
+#######################  Footer  #######################
+########################################################
+footer-text: Please feel free to download my resume below
+#footer-logo-url: images/logo.svg
+cv-download-url: http://cv.example.com
+#copyright-text: Copyright &copy; 2017 | Gleesik™ - All Right #Reserved!

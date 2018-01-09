@@ -1,0 +1,51 @@
+<!-- Section Services -->
+<section class="section-services section section-focus">
+
+  <div class="section-header-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 push-md-3">
+
+          <header class="section-header text-center">
+            <h2 class="section-title text-upper">{{ site.services-section-title }}</h2>
+          </header>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row section-description">
+      <div class="col-md-12 text-center">
+        <p>{{ site.services-section-description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row services">
+      {% for service in site.services %}
+        <div class="col-lg-4 col-md-6">
+          <div class="service-box text-center">
+            <span class="icon-box">
+              <span class="{{ service.icon }}"></span>
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 viewBox="0 -10 300 320" xml:space="preserve">
+              <g>
+              	<polygon points="22.3,223.7 22.3,76.3 150,2.5 277.7,76.3 277.7,223.7 150,297.5 	"/>
+              	<path d="M150,4.8l125.7,72.6v145.2L150,295.2L24.3,222.6V77.4L150,4.8 M150,0.2L20.3,75.1v149.8L150,299.8l129.7-74.9V75.1L150,0.2
+              		L150,0.2z"/>
+              </g>
+              </svg>
+            </span>
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.short-description }}</p>
+            <hr class="underline">
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</section>

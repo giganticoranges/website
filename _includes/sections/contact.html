@@ -1,0 +1,52 @@
+<!-- Section Contact -->
+<section class="section-contact section section-focus">
+
+  <div class="section-header-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 push-md-3">
+
+          <header class="section-header text-center">
+            <h2 class="section-title text-upper">{{ site.contact-section-title }}</h2>
+          </header>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row section-description">
+      <div class="col-md-12 text-center">
+        <p>{{ site.contact-section-description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <form action="https://formspree.io/{{ site.contact-info.email }}" method="POST" class="contact-form" id="contact_form">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-4 col-md-2 push-md-2">
+          <input name="name" placeholder="Name" type="text">
+        </div>
+        <div class="col-md-4 col-md-2 push-md-2">
+          <input name="email" placeholder="Email" type="text">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-2 push-md-2">
+          <input name="subject" placeholder="Subject" type="text">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-2 push-md-2">
+          <textarea name="message" rows="8" placeholder="Message..." cols="80"></textarea>
+        </div>
+      </div>
+      <div class="row text-center">
+        <button type="submit" value="Submit" form="contact_form"><span class="pe-7s-paper-plane"></span> Send</button>
+      </div>
+    </div>
+  </form>
+
+</section>

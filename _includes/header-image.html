@@ -1,0 +1,31 @@
+<!-- Site Header -->
+<header class="site-header">
+  <div class="container-wrapper" style="background-image: url( {{ site.header-image }} );">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 push-md-4">
+
+          <div class="avatar">
+            <img src="{{ site.avatar-url }}" alt="{{ site.name }} {{ site.surname }}">
+          </div>
+
+          <div class="info-wrapper">
+            <div class="info text-center text-upper">
+              <p class="lead name">{{ site.name }}</p>
+              <p class="lead surname">{{ site.surname }}</p>
+            </div>
+
+            <ul class="jobs list-style-none text-center text-upper">
+              {% for item in site.jobs %}
+                <li>{{ item.job }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <span class="left"></span>
+    <span class="right"></span>
+  </div>
+</header>
